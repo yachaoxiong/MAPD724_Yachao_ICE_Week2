@@ -8,6 +8,7 @@ class Ocean : GameObject
     init()
     {
         super.init(imageString: "ocean", initialScale: 2.0)
+        Start()
     }
     
     required init?(coder aDecoder: NSCoder)
