@@ -68,6 +68,10 @@
 		8F1189232978D11C00298E80 /* dock51.woff in Resources */ = {isa = PBXBuildFile; fileRef = 8F1188ED2978D11C00298E80 /* dock51.woff */; };
 		8F1189242978D11C00298E80 /* dock51.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 8F1188EE2978D11C00298E80 /* dock51.woff2 */; };
 		8F1189252978D11C00298E80 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1188EF2978D11C00298E80 /* Dock51.ttf */; };
+		8F1189282978D48B00298E80 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1189272978D48B00298E80 /* GameObject.swift */; };
+		8F11892A2978D99000298E80 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1189292978D99000298E80 /* GameProtocol.swift */; };
+		8F11892C2978DCD800298E80 /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F11892B2978DCD800298E80 /* ocean.png */; };
+		8F11892F2978DD9B00298E80 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F11892E2978DD9B00298E80 /* Ocean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +137,10 @@
 		8F1188ED2978D11C00298E80 /* dock51.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = dock51.woff; sourceTree = "<group>"; };
 		8F1188EE2978D11C00298E80 /* dock51.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dock51.woff2; sourceTree = "<group>"; };
 		8F1188EF2978D11C00298E80 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
+		8F1189272978D48B00298E80 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		8F1189292978D99000298E80 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		8F11892B2978DCD800298E80 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
+		8F11892E2978DD9B00298E80 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,8 @@
 		8F11889D2978C40800298E80 /* MAPD724-W2023-ICE-Yachao */ = {
 			isa = PBXGroup;
 			children = (
+				8F11892D2978DD7700298E80 /* GameObject */,
+				8F1189262978D46E00298E80 /* Core */,
 				8F1188B52978D11C00298E80 /* Assets */,
 				8F11889E2978C40800298E80 /* AppDelegate.swift */,
 				8F1188A02978C40800298E80 /* GameScene.sks */,
@@ -191,6 +201,7 @@
 		8F1188B62978D11C00298E80 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8F11892B2978DCD800298E80 /* ocean.png */,
 				8F1188B72978D11C00298E80 /* bullet.png */,
 				8F1188B82978D11C00298E80 /* plane3.png */,
 				8F1188B92978D11C00298E80 /* plane2.png */,
@@ -270,6 +281,23 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		8F1189262978D46E00298E80 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8F1189272978D48B00298E80 /* GameObject.swift */,
+				8F1189292978D99000298E80 /* GameProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8F11892D2978DD7700298E80 /* GameObject */ = {
+			isa = PBXGroup;
+			children = (
+				8F11892E2978DD9B00298E80 /* Ocean.swift */,
+			);
+			path = GameObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +371,7 @@
 				8F1189052978D11C00298E80 /* coin06.png in Resources */,
 				8F1189212978D11C00298E80 /* textureAtlas.json in Resources */,
 				8F1188A12978C40800298E80 /* GameScene.sks in Resources */,
+				8F11892C2978DCD800298E80 /* ocean.png in Resources */,
 				8F11890B2978D11C00298E80 /* coin01.png in Resources */,
 				8F1189162978D11C00298E80 /* explosion6.png in Resources */,
 				8F1188F52978D11C00298E80 /* plane.png in Resources */,
@@ -396,8 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1189282978D48B00298E80 /* GameObject.swift in Sources */,
+				8F11892A2978D99000298E80 /* GameProtocol.swift in Sources */,
 				8F1188A52978C40800298E80 /* GameScene.swift in Sources */,
 				8F1188A72978C40800298E80 /* GameViewController.swift in Sources */,
+				8F11892F2978DD9B00298E80 /* Ocean.swift in Sources */,
 				8F11889F2978C40800298E80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
